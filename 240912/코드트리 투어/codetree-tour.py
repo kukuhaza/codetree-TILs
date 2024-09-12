@@ -3,7 +3,7 @@ import sys
 
 INF = float('inf')
 MAX_N =2000
-MAX_ID = 30000
+MAX_ID = 30005
 
 input = sys.stdin.readline
 
@@ -91,7 +91,7 @@ def buildLand(n,m,arr):
 
 #添加新的旅行产品
 def addPackage(id, revenue, dest):
-    isMade[id] = True;
+    isMade[id] = True
     #利润 = 收入-最短路径成本
     profit = revenue - D[dest]
     #将此产品以Package类的实例形式加入到优先队列pq中
